@@ -24,20 +24,16 @@ nav {
 
 main {
     background-color: #FFFFFF;
-    display: flex;
-    width: 800px;
-    height: 672px;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 40px;
-    justify-content: space-between;
+    position: absolute;
+    width: 55.6%;
+    /* height: 672px; */
+    left: 22.22%;
+    right: 22.22%;
+    top: 128px;
+    bottom: 40px;
+    /* justify-content: space-between; */
     box-shadow: 0px 16px 90px rgba(19, 7, 52, 0.08);
     border-radius: 12px;
-}
-
-a {
-    text-decoration: none;
-    border-radius: 100%;
 }
 
 h1 {
@@ -178,38 +174,21 @@ h3 {
     flex-direction: column;
 }
 
-.cta-2 {
-    /* sisi main content top right */
-    /* background-color: pink; */
-    display: flex;
-    flex-direction: column;
-}
-
-
 .button-tambah-tugas {
-    /* Auto layout */
     display: flex;
     flex-direction: row;
     align-items: center;
-    align-content: center;
     padding: 12px 15px;
     gap: 8px;
-    /* position: absolute; */
+    position: absolute;
     width: 185px;
     height: 48px;
-    /* margin-top: 55px;
-    margin-right: 40px; */
-    /* Primary/500 */
+    right: 40px;
+    top: 55px;
     background: #FF5F26;
     border-radius: 60px;
     border: none;
     cursor: pointer;
-}
-
-.cta-2-1 {
-    display: flex;
-    padding-top: 55px;
-    padding-right: 40px;
 }
 
 .text-tambah-tugas {
@@ -227,34 +206,27 @@ h3 {
     flex-grow: 0;
 }
 
-.button-bytanggal {
-    /* Auto layout */
+.dropbtn {
+    /* dropdwon button by tanggal orange*/
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    align-content: center;
     padding: 12px 15px;
     gap: 4px;
-    /* position: absolute; */
+    position: absolute;
     width: 138px;
     height: 48px;
-    /* margin-top: 35px;
-    margin-left: 45px; */
-    /* Primary/500 */
+    right: 40px;
+    top: 134px;
     background: transparent;
     border: 1px solid #FF5F26;
     border-radius: 60px;
     cursor: pointer;
 }
 
-.cta-2-2 {
-    display: flex;
-    padding-top: 35px;
-    padding-left: 45px;
-}
-
 .text-bydate {
-    /* text By Tanggal */
+    /* text By Tanggal orange */
     display: flex;
     align-items: center;
     text-align: center;
@@ -265,9 +237,112 @@ h3 {
     line-height: 24px;
     width: 80px;
     height: 24px;
-    margin-right: 10px;
-    cursor: pointer;
-    text-decoration: none;
+    margin-right: 7px;
+}
+
+.text-bydate-abu {
+    /* text by Tanggal abu-abu */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-style: normal;
+    color: #7A7F83;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    width: 80px;
+    height: 24px;
+    margin-right: 7px;
+}
+
+.dropdown-content {
+    /* Dropdown content (Hidden by Default) */
+    position: absolute;
+    right: 40px;
+    top: 205px;
+    width: 300px;
+    height: 150px;
+    padding: 24px;
+    background: #FFFFFF;
+    border: 1px solid #CCCED2;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+    .hidden-content {
+        display: none;
+    }
+
+.radio-bttn {
+    /* background-color: red; */
+    display: flex;
+    width: 20px;
+    height: 20px;
+    margin-left: 137px;
+}
+
+.ctn1 {
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.text-by-tgl {
+    width: 90px;
+    height: 24px;
+    left: 0px;
+    top: 0px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #293038;
+}
+
+.ctn2 {
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.text-by-time {
+    width: 90px;
+    height: 24px;
+    left: 0px;
+    top: 0px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #293038;
+}
+
+.ctn3 {
+    /* background-color: lightgoldenrodyellow; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.text-terbaru {
+    width: 90px;
+    height: 24px;
+    left: 0px;
+    top: 0px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #293038;
 }
 
 .text-sortby {
@@ -319,23 +394,17 @@ h3 {
     flex-direction: row;
     width: fit-content;
     align-items: center;
-    /* align-content: center; */
     margin-top: 28px;
     margin-left: 40px;
 }
 
-.vertikal-line {
-    display: flex;
-    border: 1px solid #262530;
-    width: 0;
-    height: 28px;
-    margin-left: 14px;
-    margin-right: 4px;
+::placeholder {
+    color: #9E9E9E;
 }
 
 .masukkan-nama-tugas {
     /* teks masukkan nama tugas */
-    /* background-color: yellow; */
+    background-color: transparent;
     display: flex;
     width: 220px;
     font-style: normal;
@@ -345,11 +414,6 @@ h3 {
     margin-left: 14px;
     align-items: center;
     border: none;
-    background-color: transparent;
-}
-
-::placeholder {
-    color: #9E9E9E;
 }
 
 .input-desc-date-1 {
@@ -365,14 +429,16 @@ h3 {
 
 .desc {
     /* teks deskripsi */
+    background-color: transparent;
+    border: none;
     font-style: normal;
+    width: 187px;
     font-weight: 400;
     font-size: 14px;
     line-height: 100%;
     margin-left: 10px;
     display: flex;
     align-items: center;
-    color: #9E9E9E;
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -391,23 +457,25 @@ h3 {
 
 .tanggal-waktu {
     /* teks tanggal & waktu */
+    background-color: transparent;
+    border: none;
     font-style: normal;
+    width: 125px;
     font-weight: 400;
     font-size: 14px;
     line-height: 100%;
     margin-left: 10px;
     display: flex;
     align-items: center;
-    color: #9E9E9E;
     flex: none;
     order: 1;
     flex-grow: 0;
 }
 
-    .hidden {
+    .hidden-task {
+        /* Adding Task (Hidden by Default) */
         display: none;
     }
-
 
 .task-1 {
     /* border box text pd */
@@ -455,7 +523,7 @@ h3 {
     font-size: 12px;
     color: #FF5F26;
     line-height: 100%;
-    margin-left: 16px;
+    margin-left: 8px;
     border: 0px;
     background-color: #FFEBD3;
     border-radius: 50px;
@@ -504,7 +572,7 @@ h3 {
     font-size: 12px;
     color: #FF5F26;
     line-height: 100%;
-    margin-left: 16px;
+    margin-left: 8px;
     border: 0px;
     background-color: #FFEBD3;
     border-radius: 50px;
@@ -553,7 +621,7 @@ h3 {
     font-size: 12px;
     color: #FF5F26;
     line-height: 100%;
-    margin-left: 16px;
+    margin-left: 8px;
     border: 0px;
     background-color: #FFEBD3;
     border-radius: 50px;
@@ -567,26 +635,25 @@ h3 {
 }
 
 .vector {
-    display: flex;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 231px;
-    /* margin-bottom: 72px; */
+    position: absolute;
     width: 720px;
     height: 0px;
-    /* left: 40px;
-    top: 600px; */
+    left: 40px;
+    top: 600px;
     border: 1px solid #CCCED2;
 }
 
 .tugas-terselesaikan {
     /* background-color: orange; */
+    position: fixed;
     display: flex;
     flex-direction: row;
     align-items: center;
     width: fit-content;
-    margin-left: 47px;
-    margin-top: 20px;
+    /* margin-left: 47px;
+    margin-top: 20px; */
+    padding-top: 100px;
+    padding-left: 47px;
     font-style: normal;
     font-weight:lighter;
     font-size: 16px;

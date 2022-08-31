@@ -42,34 +42,45 @@
                             <p class="text-sortby">Sort By</p>
                         </div>
                         <div class="cta-2">
-                            <div class="cta-2-1">
-                                <button class="button-tambah-tugas" type="button">
-                                    <img src="../assets/svg/Plus.svg" alt="add">
-                                    <p class=text-tambah-tugas>Tambah Tugas</p>
-                                </button>
-                            </div>
-                            <div class="cta-2-2">                            
-                                <button class="button-bytanggal" type="button">
+                            <button class="button-tambah-tugas" id="add-task-btn" type="button">
+                                <img src="../assets/svg/Plus.svg" alt="add">
+                                <p class=text-tambah-tugas>Tambah Tugas</p>
+                            </button>
+                            <div class="dropdown">
+                                <!-- dropdown button orange -->
+                                <button class="dropbtn" id="drop-btn">
                                     <p class="text-bydate">By Tanggal</p>
-                                    <img src="../assets/svg/Arrow - Down 2.svg" alt="arrow-down-2" class="arrow-down-orange">
-                                </button>                               
+                                    <img src="../assets/svg/Arrow - Down 2.svg" alt="arrow-down-2" class="arrow-down-orange">                                
+                                </button>                                
+                                <!-- <div class="hidden-content">
+                                    dropdown button abu-abu
+                                    <button class="dropdownbtn hidden-el">
+                                        <p class="ext-bydate-abu">By Tanggal</p>
+                                        <img src="..//assets/svg/Arrow - Up.svg" alt="arrow-up" class="arrow-up">
+                                    </button> -->
+                                    <div class="dropdown-content hidden-content" id="dropdown-element">                                    
+                                        <div class="ctn1"><p class="text-by-tgl">By Tanggal</p><input type="radio" name="sortby" class="radio-bttn"></div>
+                                        <div class="ctn2"><p class="text-by-time">By Time</p><input type="radio" name="sortby" class="radio-bttn"></div>
+                                        <div class="ctn3"><p class="text-terbaru">Terbaru</p><input type="radio" name="sortby" class="radio-bttn"></div>
+                                    </div>
+                                <!-- </div> -->
+                                    
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="create hidden">
+                <div class="create hidden-task" id="add-task-input">
                     <div class="create-tambah-tugas">
                         <input type="radio" class="radio-button">                        
                         <input type="text" class="masukkan-nama-tugas" placeholder="Masukkan nama tugas">
-                        <!-- <p class="masukkan-nama-tugas">Masukkan nama tugas</p> -->
                     </div>
                     <div class="input-desc-date-1">
                         <img src="../assets/svg/menu.svg" alt="menu" class="menu">
-                        <p class="desc">Deskripsi Tugas (Optional)</p>
+                        <input type="text" class="desc" placeholder="Deskripsi Tugas (Optional)">                        
                     </div>
                     <div class="input-desc-date-2">
                         <img src="../assets/svg/Calendar.svg" alt="Calendar" class="calendar">
-                        <p class="tanggal-waktu">Tanggal & Waktu</p>
+                        <input type="text" class="tanggal-waktu" placeholder="Tanggal & Waktu">                        
                     </div>
                 </div>
                 <div class="task">
@@ -107,16 +118,16 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="vector">
-                <!-- border garis -->
-            </div> 
+        <div class="vector">
+            <!-- border garis -->
+        </div> 
 
-            <div class="tugas-terselesaikan">
+            <!-- <div class="tugas-terselesaikan">
                 <img src="../assets/svg/Arrow - Right 1.svg" alt="arrow-right-1" class="arrow-right-1">
                 <p>Terselesaikan (3 tugas)</p>
-            </div>
-        </div>
+            </div> -->
     </main>
 
     <script src="../js/script.js">
