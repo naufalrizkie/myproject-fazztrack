@@ -9,6 +9,7 @@ addBtn.addEventListener('click', function() {
 
 const dropBtn = document.getElementById("drop-btn");
 console.log((dropBtn));
+//menambahkan event dropdown
 dropBtn.addEventListener('click', function() {
     const dropEl = document.getElementById("dropdown-element");
     console.log(dropEl);
