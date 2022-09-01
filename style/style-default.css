@@ -23,6 +23,7 @@ nav {
 }
 
 main {
+    /* main card */
     background-color: #FFFFFF;
     position: absolute;
     width: 55.6%;
@@ -358,17 +359,10 @@ h3 {
     color: #7A7F83;;
 }
 
-.radio-button {
-    /* icon radio button task */
-    box-sizing: border-box;
+.checkbox-button {
+    /* icon checkbox button task */
     width: 28px;
     height: 28px;
-    background: #FFFFFF;
-    border: 1px solid #CCCED2;
-    border-radius: 100px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 
 .task {
@@ -639,26 +633,26 @@ h3 {
     width: 720px;
     height: 0px;
     left: 40px;
-    top: 600px;
+    top: 590px;
     border: 1px solid #CCCED2;
 }
 
 .tugas-terselesaikan {
-    /* background-color: orange; */
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    position: absolute;
     width: fit-content;
-    /* margin-left: 47px;
-    margin-top: 20px; */
-    padding-top: 100px;
-    padding-left: 47px;
+    height: 18px;
+    top: 615px;
+    left: 40px;
     font-style: normal;
-    font-weight:lighter;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 18px;
     line-height: 100%;
+    display: flex;
+    align-items: center;
     color: #7A7F83;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
 }
 
 .arrow-right-1 {
@@ -667,3 +661,4 @@ h3 {
     height: 22px;
     margin-right: 10px;
 }
+
