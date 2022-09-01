@@ -15,3 +15,4 @@ dropBtn.addEventListener('click', function() {
     console.log(dropEl);
     dropEl.classList.toggle("hidden-content");
 })
+
