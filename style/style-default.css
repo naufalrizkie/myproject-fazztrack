@@ -260,7 +260,7 @@ h3 {
     /* Dropdown content (Hidden by Default) */
     position: absolute;
     right: 40px;
-    top: 205px;
+    top: 190px;
     width: 300px;
     height: 150px;
     padding: 24px;
@@ -376,10 +376,15 @@ h3 {
     background-color: #F5F5F5;
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 8px;
     padding-bottom: 11px;
 }
+
+    .hidden-task {
+        /* Adding Task (Hidden by Default) */
+        display: none;
+    }
 
 .create-tambah-tugas {
     /* sizing box tambah tugas */
@@ -388,7 +393,7 @@ h3 {
     flex-direction: row;
     width: fit-content;
     align-items: center;
-    margin-top: 28px;
+    margin-top: 20px;
     margin-left: 40px;
 }
 
@@ -465,11 +470,6 @@ h3 {
     order: 1;
     flex-grow: 0;
 }
-
-    .hidden-task {
-        /* Adding Task (Hidden by Default) */
-        display: none;
-    }
 
 .task-1 {
     /* border box text pd */
@@ -661,4 +661,3 @@ h3 {
     height: 22px;
     margin-right: 10px;
 }
-
