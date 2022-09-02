@@ -16,8 +16,24 @@ dropBtn.addEventListener('click', function() {
     dropEl.classList.toggle("hidden-content");
 })
 
-function myFunction () {
-    var x = document.getElementById("demo");
+function myFunction1 () {
+    var x = document.getElementById("myPd");
+    if (x.style.textDecoration == "line-through") {
+        x.style.textDecoration = "none";
+    } else { x.style.textDecoration = "line-through";
+    }    
+}
+
+function myFunction2 () {
+    var x = document.getElementById("myDv");
+    if (x.style.textDecoration == "line-through") {
+        x.style.textDecoration = "none";
+    } else { x.style.textDecoration = "line-through";
+    }    
+}
+
+function myFunction3 () {
+    var x = document.getElementById("myL");
     if (x.style.textDecoration == "line-through") {
         x.style.textDecoration = "none";
     } else { x.style.textDecoration = "line-through";
