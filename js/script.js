@@ -16,17 +16,26 @@ dropBtn.addEventListener('click', function() {
     dropEl.classList.toggle("hidden-content");
 })
 
+function myFunction () {
+    var x = document.getElementById("demo");
+    if (x.style.textDecoration == "line-through") {
+        x.style.textDecoration = "none";
+    } else { x.style.textDecoration = "line-through";
+    }    
+}
+
 //menambahkan event dropRightbtn
 // const arrowrighBtn = document.getElementById("arrow-right-btn");
 // console.log(arrowrightBtn);
 
-const checkboxBtn = document.getElementById("checkbox-button");
-console.log(checkboxBtn);
-checkboxBtn.addEventListener('click', function() {
-    const lineThrough = document.getElementById("demo");
-    lineThrough.style.textDecoration = "line-through";
-})
+// const checkboxBtn = document.getElementById("checkbox-button");
+// console.log(checkboxBtn);
+// checkboxBtn.addEventListener('click', function() {
+//     const lineThrough = document.getElementById("demo");
+//     lineThrough.style.textDecoration = "line-through";
+// })
 
 // function myFunction() {
 //     document.getElementById("demo").style.textDecoration = "line-through"
 // }
+
