@@ -630,9 +630,9 @@ h3 {
 
 .vector {
     position: absolute;
-    width: 720px;
     height: 0px;
     left: 40px;
+    right: 40px;
     top: 590px;
     border: 1px solid #CCCED2;
 }
@@ -656,9 +656,10 @@ h3 {
 }
 
 .arrow-right-1 {
+    /* position: absolute; */
+    /* left: 40px; */
     display: flex;
     width: 24px;
     height: 22px;
-    margin-right: 10px;
     cursor: pointer;
 }

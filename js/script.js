@@ -16,3 +16,5 @@ dropBtn.addEventListener('click', function() {
     dropEl.classList.toggle("hidden-content");
 })
 
+const arrowRightbtn = document.getElementById("arrow-right-btn");
+console.log(arrowRightbtn);
