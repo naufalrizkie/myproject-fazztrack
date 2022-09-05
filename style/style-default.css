@@ -39,7 +39,6 @@ main {
 
 h1 {
     /* MY TASKS */
-    /* background-color: white; */
     width: 85px;
     height: 16px;
     font-family: 'Poppins';
@@ -47,42 +46,43 @@ h1 {
     font-weight: 500;
     font-size: 16px;
     line-height: 100%;
-    /* identical to box height, or 16px */
     display: flex;
     align-items: center;
     letter-spacing: 1px;
-    /* Primary/500 */
     color: #FF5F26;
-    margin-top: 40px;
-    margin-left: 40px;
 }
 
 h2 {
     /* to do list */
-    /* background-color: white; */
     display: flex;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     color: #293038;
     width: fit-content;
-    margin-left: 40px;
     margin-top: 10px;
     color: #293038;
 }
 
 h3 {
     /* buat list tugas harian saya */
-    /* background-color: pink; */
     display: flex;
     font-style: normal;
     font-weight: 400;
     font-size:16px;
     color: #7A7F83;
     width: fit-content;
-    margin-left: 40px;
     margin-top: 8px;
 }
+
+/* .main-task {
+    border: 1px solid red;
+    position: relative;
+    overflow: scroll;
+    width: 720px;
+    margin: 40px auto;
+    height: 600px;
+} */
 
 .arrow-down-black-nav {
     /* icon arrow down black */
@@ -98,7 +98,6 @@ h3 {
     display: flex;
     width: 24px;
     height: 22px;
-    margin-right: 46px;
 }
 
 .arrow-down-orange {
@@ -161,11 +160,12 @@ h3 {
 }
 
 .cta {
-    /* background-color: lightblue; */
+    /* border: 1px solid blue; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 800px;
+    width: 720px;
+    margin: 40px auto 0px;
 }
 
 .cta-1 {
@@ -176,16 +176,15 @@ h3 {
 }
 
 .button-tambah-tugas {
+    /* position: absolute; */
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 12px 15px;
     gap: 8px;
-    position: absolute;
     width: 185px;
     height: 48px;
-    right: 40px;
-    top: 55px;
+    margin-top: 15px;
     background: #FF5F26;
     border-radius: 60px;
     border: none;
@@ -215,11 +214,10 @@ h3 {
     align-items: center;
     padding: 12px 15px;
     gap: 4px;
-    position: absolute;
     width: 138px;
     height: 48px;
-    right: 40px;
-    top: 134px;
+    margin-top: 40px;
+    margin-left: auto;
     background: transparent;
     border: 1px solid #FF5F26;
     border-radius: 60px;
@@ -259,8 +257,9 @@ h3 {
 .dropdown-content {
     /* Dropdown content (Hidden by Default) */
     position: absolute;
+
+    top: 210px;
     right: 40px;
-    top: 205px;
     width: 300px;
     height: 150px;
     padding: 24px;
@@ -354,7 +353,6 @@ h3 {
     font-size: 16px;
     line-height: 100%;
     width: fit-content;
-    margin-left: 40px;
     margin-top: 29px;
     color: #7A7F83;;
 }
@@ -366,19 +364,23 @@ h3 {
 }
 
 .task {
-    /* background-color: blue; */
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
-    margin-top: 26px;
+    width: 720px;
+    margin: 17px auto 0px;
+
 }
 
 .create {
+    /* border: 1px solid green; */
     background-color: #F5F5F5;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
-    margin-bottom: 8px;
-    padding-bottom: 11px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 20px 40px 11px;
 }
 
     .hidden-task {
@@ -393,8 +395,7 @@ h3 {
     flex-direction: row;
     width: fit-content;
     align-items: center;
-    margin-top: 20px;
-    margin-left: 40px;
+    /* margin-top: 20px; */
 }
 
 ::placeholder {
@@ -423,7 +424,7 @@ h3 {
     width: fit-content;
     align-items: center;
     margin-top: 12px;
-    margin-left: 83px;
+    margin-left: 43px;
 }
 
 .desc {
@@ -451,7 +452,7 @@ h3 {
     width: fit-content;
     align-items: center;
     margin-top: 12px;
-    margin-left: 83px;
+    margin-left: 43px;
 }
 
 .tanggal-waktu {
@@ -488,7 +489,7 @@ h3 {
     font-weight: 500;
     font-size: 18px;
     line-height: 100%;
-    margin-left: 40px;
+    /* margin-left: 40px; */
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -501,7 +502,7 @@ h3 {
 
 .tugas-design-team {
   display: flex;
-  margin-left: 82px;
+  margin-left: 42px;
   margin-top: 13px;
   font-style: normal;
   font-weight: 400;
@@ -548,7 +549,7 @@ h3 {
     font-weight: 500;
     font-size: 18px;
     line-height: 100%;
-    margin-left: 40px;
+    /* margin-left: 40px; */
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -597,7 +598,7 @@ h3 {
     font-weight: 500;
     font-size: 18px;
     line-height: 100%;
-    margin-left: 40px;
+    /* margin-left: 40px; */
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -628,38 +629,126 @@ h3 {
     flex-grow: 0;
 }
 
-.vector {
+/* .container-task-done {
+    background-color: lightblue;
+    display: flex;
+    margin: auto;
+    width: 800px;
+    height: 5%;
+    left: 0px;
+    bottom: 0px;
+} */
+
+/* .container-footer {
+    background-color: red;
     position: absolute;
-    height: 0px;
+    width: 100%;
+    top: 444px;
+    height: 172px;
+} */
+
+.vector {
+    display: flex;
+    position: absolute;
     left: 40px;
     right: 40px;
     top: 590px;
     border: 1px solid #CCCED2;
 }
 
-.tugas-terselesaikan {
-    position: absolute;
-    width: fit-content;
-    height: 18px;
-    top: 615px;
-    left: 40px;
+.task-done-title {
+    background-color: lightyellow;
+    display: flex;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 18px;
     line-height: 100%;
-    display: flex;
     align-items: center;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 40px;
+    margin-top: 0px;
     color: #7A7F83;
     flex: none;
     order: 1;
     flex-grow: 0;
+    /* position: absolute; */
 }
 
 .arrow-right-1 {
     /* position: absolute; */
-    /* left: 40px; */
+    left: 40px;
     display: flex;
     width: 24px;
     height: 22px;
     cursor: pointer;
+}
+
+.task-done-list {
+    background-color: lightgreen;
+    /* position: absolute; */
+    display: flex;
+    /* flex-direction: column; */
+    width: 720px;
+    height: 100px;
+    order: 1;
+    flex-grow: 0;
+    margin: auto;
+}
+
+.hidden-list {
+    display: none;
+}
+
+.list-1 {
+    /* top: 67px; */
+    display: flex;
+    flex: none;
+    left: 40px;
+    width: fit-content;
+    height: 18px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    align-items: center;
+    color: #293038;
+    order: 0;
+    flex-grow: 0;
+}
+
+.list-2 {
+    display: flex;
+    top: 36px;
+    left: 40px;
+    width: fit-content;
+    height: 18px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    color: #293038;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.list-3 {
+    position: absolute;
+    top: 72px;
+    left: 40px;
+    width: fit-content;
+    height: 18px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    color: #293038;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
