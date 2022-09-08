@@ -1,0 +1,21 @@
+users_table
+PK  user_id int NOT NULL AUTO_INCREMENT
+    user_name varchar(100) NOT NULL
+    user_avatar varchar(255)
+
+tasks_table
+PK  task_id int NOT NULL AUTO_INCREMENT
+    task_name varchar(100) NOT NULL
+    task_desc varchar(255)
+    task_due_date timestamp NOT NULL
+FK  user_id
+
+substasks_table
+PK  substasks_id int NOT NULL AUTO_INCREMENT
+    substasks_name varchar(100) NOT NULL
+FK  task_id
+
+completed_tasks_table
+PK  completed_id int NOT NULL AUTO_INCREMENT
+    completed_task_name varchar(100)
+FK  task_id

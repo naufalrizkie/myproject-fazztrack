@@ -1,0 +1,2 @@
+Query yang dibutuhkan untuk meampilkan aplikasi wazwez web
+SELECT * 
