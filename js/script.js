@@ -16,29 +16,29 @@ dropBtn.addEventListener('click', function() {
     dropEl.classList.toggle("hidden-content");
 })
 
-function myFunction1 () {
-    var x = document.getElementById("myPd");
+function myFunction (idName) {
+    var x = document.getElementById(idName);
     if (x.style.textDecoration == "line-through") {
         x.style.textDecoration = "none";
     } else { x.style.textDecoration = "line-through";
     }    
 }
 
-function myFunction2 () {
-    var x = document.getElementById("myDv");
-    if (x.style.textDecoration == "line-through") {
-        x.style.textDecoration = "none";
-    } else { x.style.textDecoration = "line-through";
-    }    
-}
+// function myFunction2 () {
+//     var x = document.getElementById("myDv");
+//     if (x.style.textDecoration == "line-through") {
+//         x.style.textDecoration = "none";
+//     } else { x.style.textDecoration = "line-through";
+//     }    
+// }
 
-function myFunction3 () {
-    var x = document.getElementById("myL");
-    if (x.style.textDecoration == "line-through") {
-        x.style.textDecoration = "none";
-    } else { x.style.textDecoration = "line-through";
-    }    
-}
+// function myFunction3 () {
+//     var x = document.getElementById("myL");
+//     if (x.style.textDecoration == "line-through") {
+//         x.style.textDecoration = "none";
+//     } else { x.style.textDecoration = "line-through";
+//     }    
+// }
 
 //menambahkan event dropRightbtn
 // const arrowrighBtn = document.getElementById("arrow-right-btn");
