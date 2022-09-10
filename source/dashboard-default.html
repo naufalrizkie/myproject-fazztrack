@@ -68,64 +68,69 @@
                         </div>
                     </div>
                 </div>
-                <div class="create hidden-task" id="add-task-input">
-                    <div class="create-tambah-tugas">
-                        <input type="checkbox" class="checkbox-button">                        
-                        <input type="text" class="masukkan-nama-tugas" placeholder="Masukkan nama tugas">
-                    </div>
-                    <div class="input-desc-date-1">
-                        <img src="../assets/svg/menu.svg" alt="menu" class="menu">
-                        <input type="text" class="desc" placeholder="Deskripsi Tugas (Optional)">                        
-                    </div>
-                    <div class="input-desc-date-2">
-                        <img src="../assets/svg/Calendar.svg" alt="Calendar" class="calendar">
-                        <input type="text" class="tanggal-waktu" placeholder="Tanggal & Waktu">                        
-                    </div>
-                </div>
-                <div class="task">
-                    <div class="task-1">
-                        <div class="task-pd">
+                <div class="container-task">
+                    <div class="create hidden-task" id="add-task-input">
+                        <div class="create-tambah-tugas">
                             <div class="round">
-                                <input type="checkbox" name="checkbox" unchecked id="checkbox-pd" class="checkbox-button" onclick="myFunction ('myPd')">
-                                <label for="checkbox-pd"></label>
-                                <p class="task-product-design" id="myPd">Product Design</p>
+                                <input type="checkbox" name="checkbox" unchecked id="checkbox-create" class="checkbox-button" onclick="myFunction ('myCreate')">
+                                <label for="checkbox-create"></label>
+                                <input type="text" class="masukkan-nama-tugas" placeholder="Masukkan nama tugas">
                             </div>
-                            <p class="hari-ini">Hari Ini</p>
                         </div>
-                        <div>
-                            <img src="/assets/svg/Arrow-Down-1.svg" alt="arrow-down-1" class="arrow-down-black">
+                        <div class="input-desc-date-1">
+                            <img src="../assets/svg/menu.svg" alt="menu" class="menu">
+                            <input type="text" class="desc" placeholder="Deskripsi Tugas (Optional)">                        
+                        </div>
+                        <div class="input-desc-date-2">
+                            <img src="../assets/svg/Calendar.svg" alt="Calendar" class="calendar">
+                            <input type="text" class="tanggal-waktu" placeholder="Tanggal & Waktu">                        
                         </div>
                     </div>
-                    <div class="tugas-design-team">
-                        <p>Tugas untuk design team</p>
-                    </div>
-
-                    <div class="task-2">
-                        <div class="task-dev">
-                            <div class="round">
-                                <input type="checkbox" name="checkbox" unchecked id="checkbox-dv" class="checkbox-button" onclick="myFunction ('myDv')">
-                                <label for="checkbox-dv"></label>
-                                <p class="task-development" id="myDv">Development</p>
+                    <div class="task">
+                        <div class="task-1">
+                            <div class="task-pd">
+                                <div class="round">
+                                    <input type="checkbox" name="checkbox" unchecked id="checkbox-pd" class="checkbox-button" onclick="myFunction ('myPd')">
+                                    <label for="checkbox-pd"></label>
+                                    <p class="task-product-design" id="myPd">Product Design</p>
+                                </div>
+                                <p class="hari-ini">Hari Ini</p>
                             </div>
-                            <p class="dev-date">15 Juni 2022</p>
-                        </div>
-                        <div>
-                            <img src="/assets/svg/Arrow-Down-1.svg" alt="arrow-down-1" class="arrow-down-black">
-                        </div>                        
-                    </div>
-
-                    <div class="task-3">
-                        <div class="task-launch">
-                            <div class="round">
-                                <input type="checkbox" name="checkbox" unchecked id="checkbox-ln" class="checkbox-button" onclick="myFunction ('myL')">
-                                <label for="checkbox-ln"></label>
-                                <p class="task-launching" id="myL">Launching Fazztrack Website</p>
+                            <div>
+                                <img src="/assets/svg/Arrow-Down-1.svg" alt="arrow-down-1" class="arrow-down-black">
                             </div>
-                            <p class="launch-date">20 Juni 2022</p>
                         </div>
-                        <div>
-                            <img src="/assets/svg/Arrow-Down-1.svg" alt="arrow-down-1" class="arrow-down-black">
-                        </div>                        
+                        <div class="tugas-design-team">
+                            <p>Tugas untuk design team</p>
+                        </div>
+    
+                        <div class="task-2">
+                            <div class="task-dev">
+                                <div class="round">
+                                    <input type="checkbox" name="checkbox" unchecked id="checkbox-dv" class="checkbox-button" onclick="myFunction ('myDv')">
+                                    <label for="checkbox-dv"></label>
+                                    <p class="task-development" id="myDv">Development</p>
+                                </div>
+                                <p class="dev-date">15 Juni 2022</p>
+                            </div>
+                            <div>
+                                <img src="/assets/svg/Arrow-Down-1.svg" alt="arrow-down-1" class="arrow-down-black">
+                            </div>                        
+                        </div>
+    
+                        <div class="task-3">
+                            <div class="task-launch">
+                                <div class="round">
+                                    <input type="checkbox" name="checkbox" unchecked id="checkbox-ln" class="checkbox-button" onclick="myFunction ('myL')">
+                                    <label for="checkbox-ln"></label>
+                                    <p class="task-launching" id="myL">Launching Fazztrack Website</p>
+                                </div>
+                                <p class="launch-date">20 Juni 2022</p>
+                            </div>
+                            <div>
+                                <img src="/assets/svg/Arrow-Down-1.svg" alt="arrow-down-1" class="arrow-down-black">
+                            </div>                        
+                        </div>
                     </div>
                 </div>
             </div>
