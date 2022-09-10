@@ -25,7 +25,6 @@ function myFunction (idName) {
     }    
 }
 
-
 //menambahkan event dropRightbtn
 // const arrowrighBtn = document.getElementById("arrow-right-btn");
 // console.log(arrowrightBtn);
