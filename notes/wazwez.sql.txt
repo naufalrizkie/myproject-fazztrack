@@ -9,7 +9,7 @@ Query yang dibutuhkan untuk meampilkan aplikasi wazwez web (DQL)
        SELECT user_name username, user_avatar photo_profil, task_name task_list, task_desc desciption, task_due_date deadline, status 
        FROM users_table ut
        INNER JOIN tasks_table tt ON tt.user_id = ut.user_id
-       WHERE ut.user_id = 1;
+       WHERE ut.user_id = 1 and 
 
     Query menampilkan semua task dan substasknya dari user (ex: user_id = 1)
         SELECT user_name username, user_avatar photo_profil, task_name task_list, task_desc desciption, subtask_name, task_due_date deadline, status 
@@ -19,10 +19,10 @@ Query yang dibutuhkan untuk meampilkan aplikasi wazwez web (DQL)
         WHERE ut.user_id = 1;
 
     Query menampilkan completed_task dari user (ex: user_id = 1)
-        SELECT user_name username, user_avatar photo_profil, task_name, completed_task_name completed_task
+        SELECT user_name username, user_avatar photo_profil, task_name, completed_task_name completed_task, status
         FROM users_table ut
-        INNER JOIN tasks_table tt ON tt.user_id = ut.user_id
+        INNER JOIN tasks_table tt ON tt.user_id = ut.user_id 
         INNER JOIN subtasks_table st ON st.task_id = tt.task_id
-        INNER JOIN completed_tasks_table ct ON ct.task_id = tt.task_id
+        INNER JOIN completed_tasks_table ct ON ct.task_id = tt.task_id 
         WHERE ut.user_id = 1;
 

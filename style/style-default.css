@@ -26,23 +26,22 @@ nav {
 main {
     /* main card */
     background-color: #FFFFFF;
+    box-shadow: 0px 16px 90px rgba(19, 7, 52, 0.08);
+    border-radius: 12px;
     position: relative;
     width: 55.6%;
-    /* height: 672px; */
     left: 22.22%;
     right: 22.22%;
     top: 51px;
     bottom: 40px;
     /* justify-content: space-between; */
-    box-shadow: 0px 16px 90px rgba(19, 7, 52, 0.08);
-    border-radius: 12px;
+   
 }
 
 h1 {
     /* MY TASKS */
     width: 85px;
     height: 16px;
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -316,7 +315,6 @@ h3 {
 .dropdown-content {
     /* Dropdown content (Hidden by Default) */
     position: absolute;
-
     top: 210px;
     right: 40px;
     width: 300px;
@@ -602,7 +600,6 @@ h3 {
 
 .task-dev {
     /* text evelopment */
-    /* background-color: lightgoldenrodyellow; */
     display: flex;
     align-items: center;
     font-style: normal;
@@ -689,34 +686,24 @@ h3 {
     flex-grow: 0;
 }
 
-/* .container-task-done {
-    width: 800px;
-    height: 5%;
-    left: 0px;
-    bottom: 0px;
-} */
-
 .container-footer {
-    background-color: transparent;
-    /* border: 1px solid red; */
-    position: relative;
+    border: 1px solid chocolate;
+    display: flex;;
     width: 100%;
-    bottom: 0px;
-    height: 172px;
 }
 
 .vector {
-    display: flex;
-    position: absolute;
+    display: none;
+    position: relative;
     left: 40px;
     right: 40px;
-    top: 65%;
+    margin: auto;
     border: 1px solid #CCCED2;
 }
 
 .task-done-title {
     /* background-color: lightyellow; */
-    position: absolute;
+    position: relative;
     display: flex;
     font-style: normal;
     font-weight: 500;
@@ -746,26 +733,18 @@ h3 {
 }
 
 .task-done-list {
-    background-color: lightgreen;
-    /* position: absolute; */
+    border: 1px dashed orange;
     display: flex;
-    /* flex-direction: column; */
-    width: 720px;
-    height: 100px;
-    order: 1;
-    flex-grow: 0;
-    margin: auto;
+    flex-direction: column;
+    width: 100%;
 }
 
-.hidden-list {
-    display: none;
+.hidden-task-done {
+    /* display: none; */
 }
 
 .list-1 {
-    /* top: 67px; */
     display: flex;
-    flex: none;
-    left: 40px;
     width: fit-content;
     height: 18px;
     font-style: normal;
@@ -774,14 +753,10 @@ h3 {
     line-height: 100%;
     align-items: center;
     color: #293038;
-    order: 0;
-    flex-grow: 0;
 }
 
 .list-2 {
     display: flex;
-    top: 36px;
-    left: 40px;
     width: fit-content;
     height: 18px;
     font-style: normal;
@@ -791,15 +766,10 @@ h3 {
     display: flex;
     align-items: center;
     color: #293038;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 
 .list-3 {
-    position: absolute;
-    top: 72px;
-    left: 40px;
+    display: flex;
     width: fit-content;
     height: 18px;
     font-style: normal;
@@ -809,7 +779,4 @@ h3 {
     display: flex;
     align-items: center;
     color: #293038;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
