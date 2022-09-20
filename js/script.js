@@ -7,6 +7,11 @@ addBtn.addEventListener('click', function() {
     inputEl.classList.toggle("hidden-task");
 })
 
+//hidden button subtask
+function hideButton(idBtn) {
+    document.getElementById(idBtn).classList.toggle("hidden-subtask");
+}
+
 //menambahkan event dropdown
 const dropBtn = document.getElementById("drop-btn");
 console.log((dropBtn));
@@ -16,7 +21,7 @@ dropBtn.addEventListener('click', function() {
     dropEl.classList.toggle("hidden-content");
 })
 
-//menambahkan event checked+linethrough
+//menambahkan event checkbox rounded checked+linethrough
 function myFunction (idName) {
     var x = document.getElementById(idName);
     if (x.style.textDecoration == "line-through") {
