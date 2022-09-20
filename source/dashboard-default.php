@@ -102,10 +102,9 @@ $asset = "../assets/";
                             $link = new mysqli($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
                             if($link) {
                                 $sql = "
-                                    SELECT task_id, user_name username, user_avatar photo_profil, task_name, task_desc description, DATE_FORMAT(task_due_date, '%d-%M-%Y') deadline, status 
-                                    FROM users_table ut
-                                    INNER JOIN tasks_table tt ON tt.user_id = ut.user_id
-                                    WHERE ut.user_id = 1 and tt.status = 'ONGOING'
+                                SELECT task_id, task_name, task_desc description, DATE_FORMAT(task_due_date, '%d-%M-%Y') deadline, status 
+                                FROM tasks_table tt
+                                WHERE tt.user_id = 1 and tt.status = 'ONGOING'
                                 ";
                                 if ($result = $link->query($sql)) {
                                     while($row = $result->fetch_object()) {
@@ -120,7 +119,7 @@ $asset = "../assets/";
                                                 <p class="due-date"><?php echo $row->deadline; ?></p>
                                             </div>
                                             <div>
-                                                <img src="<?php echo $asset; ?>svg/Arrow-Down-1.svg" alt="arrow-down-1" class="arrow-down-black">
+                                                <img src="<?php echo $asset; ?>svg/Arrow-Down-1.svg" alt="arrow-down-1" class="arrow-down-black" onclick="hideButton('subtask-btn-<?php echo $row->task_id; ?>')" style="cursor: pointer">
                                             </div>
                                         </div>
                                         <?php if ($row->description) { ?>
@@ -128,7 +127,7 @@ $asset = "../assets/";
                                                 <p><?php echo $row->description; ?></p>
                                             </div>
                                         <?php } ?>
-                                        <div class="subtask-container hidden-subtask">
+                                        <div class="subtask-container hidden-subtask" id="subtask-btn-<?php echo $row->task_id; ?>">
                                             <div class="title-sub">
                                                 <p class="sub-text">Subtask</p>
                                                 <button class="button-add-subtask" id="submit-subtask-btn" type="submit">
@@ -138,27 +137,24 @@ $asset = "../assets/";
                                             </div>
                                             <div class="subtask-list">
                                                 <?php 
-                                                $sql = "
-                                                SELECT subtask_id, user_name username, user_avatar photo_profil, task_name, task_desc description, DATE_FORMAT(task_due_date, '%d-%M-%Y') deadline, subtask_name, status
-                                                FROM users_table ut
-                                                INNER JOIN tasks_table tt ON tt.user_id = ut.user_id
-                                                INNER JOIN subtasks_table st ON st.task_id = tt.task_id
-                                                WHERE ut.user_id = 1
+                                                $sql_sub = "
+                                                SELECT subtask_id, subtask_name
+                                                FROM subtasks_table st
+                                                WHERE st.task_id = $row->task_id
                                                 ";
-                                                if ($result = $link->query($sql)) {
-                                                    while($row = $result->fetch_object()) {
+                                                if ($result_sub = $link->query($sql_sub)) {
+                                                    while($row_sub = $result_sub->fetch_object()) {
                                                         ?>
                                                 <div class="list">
                                                     <div class="round-subtask">
-                                                        <input type="checkbox" name="checkbox" unchecked id="checkbox-sub-<?php echo $row->subtask_id; ?>" class="checkbox-subtask" onclick="myFunction ('subtask-ongoing-<?php echo $row->subtask_id; ?>')">
-                                                        <label for="checkbox-sub-<?php echo $row->subtask_id; ?>"></label>
-                                                        <p class="subtask-name" id="subtask-ongoing-<?php echo $row->subtask_id; ?>"><?php echo $row->subtask_name; ?></p>
+                                                        <input type="checkbox" name="checkbox" unchecked id="checkbox-sub-<?php echo $row_sub->subtask_id; ?>" class="checkbox-subtask" onclick="myFunction ('subtask-ongoing-<?php echo $row_sub->subtask_id; ?>')">
+                                                        <label for="checkbox-sub-<?php echo $row_sub->subtask_id; ?>"></label>
+                                                        <p class="subtask-name" id="subtask-ongoing-<?php echo $row_sub->subtask_id; ?>"><?php echo $row_sub->subtask_name; ?></p>
                                                     </div>
                                                     <img src="<?php echo $asset; ?>svg/trash.svg" alt="trash">
                                                 </div>
                                                 <?php }
-                                                } 
-                                                ?>
+                                                } ?>
                                             </div>
                                         </div>
                                         <?php
