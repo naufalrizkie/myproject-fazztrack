@@ -21,3 +21,14 @@ Query yang dibutuhkan untuk meampilkan aplikasi wazwez web (DQL)
         INNER JOIN tasks_table tt ON tt.user_id = ut.user_id
         WHERE ut.user_id = 1 and tt.status = 'DONE'
 
+        // INSERT
+$link = new mysqli($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
+if($link) {
+    $sql = "INSERT INTO `task` (`nama`, `deskripsi`, `tanggal`) VALUES ('$nama', '$deskripsi', '$tanggal');";
+    if ($result = $link->query($sql)) {
+    	if ($result->affected_rows) {
+    		// sukses insert
+    	}
+    }
+}
+$link->close();

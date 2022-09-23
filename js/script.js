@@ -7,18 +7,38 @@ addBtn.addEventListener('click', function() {
     inputEl.classList.toggle("hidden-task");
 })
 
-//hidden button subtask
-function hideButton(idBtn) {
-    document.getElementById(idBtn).classList.toggle("hidden-subtask");
+//hidden arrow button subtask
+function hideButton(hideBtn) {
+    document.getElementById(hideBtn).classList.toggle("hidden-subtask");
 }
 
-//menambahkan event dropdown
-const dropBtn = document.getElementById("drop-btn");
-console.log((dropBtn));
-dropBtn.addEventListener('click', function() {
-    const dropEl = document.getElementById("dropdown-element");
-    console.log(dropEl);
-    dropEl.classList.toggle("hidden-content");
+//hidden button completed
+function taskCompleted(idCompleted) {
+    document.getElementById(idCompleted).classList.toggle("hidden-task-done");
+}
+
+//menambahkan event dropdown by Tanggal orange -> grey
+const datebtnOramge = document.getElementById("drop-btn");
+datebtnOramge.addEventListener('click', function() {
+    const dropDate = document.getElementById("dropdown-element");
+    const datebtnGrey = document.getElementById("date-btn-grey");
+    if (datebtnGrey.style.display = "none") {
+        datebtnOramge.style.display = "none";
+        datebtnGrey.style.display = "flex";
+        dropDate.style.display = "block"; 
+    }
+})
+
+//menambahkan event dropdown by Tanggal grey -> orange
+const datebtnGrey = document.getElementById("date-btn-grey");
+datebtnGrey.addEventListener('click', function() {
+    const dropDate = document.getElementById("dropdown-element");
+    const datebtnOramge = document.getElementById("drop-btn");
+    if (datebtnOramge.style.display = "none") {
+        datebtnOramge.style.display = "flex";
+        datebtnGrey.style.display = "none";
+        dropDate.style.display = "none"; 
+    }
 })
 
 //menambahkan event checkbox rounded checked+linethrough
@@ -29,6 +49,15 @@ function myFunction (idName) {
     } else { x.style.textDecoration = "line-through";
     }    
 }
+
+// toggle button date orange -> grey
+// function dateBtn(btnOrange) {
+//     document.getElementById(btnOrange);.classList.toggle("hidden-btn-date-grey");
+// }
+
+
+// arrow button subtask
+
 
 //menambahkan event dropRightbtn
 // const arrowrighBtn = document.getElementById("arrow-right-btn");
