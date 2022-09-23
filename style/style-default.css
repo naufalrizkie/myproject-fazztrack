@@ -100,6 +100,13 @@ h3 {
     align-items: center;
 }
 
+/* membuat checkbox rounded di completed task */
+.round-completed {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 /* ini buat circle nya */
 .round label {
     background-color: #fff;
@@ -160,6 +167,12 @@ h3 {
     display: flex;
     width: 24px;
     height: 22px;
+}
+
+.arrow-up-grey {
+    display: none;
+    /* width: 24px; */
+    /* height: 22px; */
 }
 
 .arrow-down-orange {
@@ -293,7 +306,7 @@ h3 {
     flex-grow: 0;
 }
 
-.dropbtn {
+.dropbtn-date-orange {
     /* dropdwon button by tanggal orange*/
     display: flex;
     flex-direction: row;
@@ -307,6 +320,24 @@ h3 {
     margin-left: auto;
     background: transparent;
     border: 1px solid #FF5F26;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.dropbtn-date-grey {
+    /* dropdwon button by tanggal grey */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 15px;
+    gap: 4px;
+    width: 138px;
+    height: 48px;
+    margin-top: 40px;
+    margin-left: auto;
+    background: transparent;
+    border: 1px solid #CCCED2;
     border-radius: 50px;
     cursor: pointer;
 }
@@ -354,6 +385,17 @@ h3 {
     border-radius: 8px;
     box-sizing: border-box;
 }
+
+    .hidden-btn-date-grey {
+        /* default display none */
+        display: none;
+    }
+
+    .hidden-btn-date-orange {
+        /* deafault display on */
+        /* display: none; */
+    }
+
     .hidden-content {
         display: none;
     }
@@ -470,7 +512,7 @@ h3 {
     display: flex;
     flex-direction: column;
     width: 90%;
-    margin: 17px auto 0px;
+    margin: 0px auto;
 
 }
 
@@ -580,6 +622,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
 }
 
 .task-name {
@@ -606,7 +649,7 @@ h3 {
   display: flex;
   margin-left: 40px;
   margin-top: 13px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -641,7 +684,7 @@ h3 {
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* margin-top: 10px; */
+    margin-top: 20px;
     margin-bottom: 16px;
     padding: 0px 16px;
 }
@@ -697,6 +740,7 @@ h3 {
 .list {
     display: flex;
     justify-content: space-between;
+    padding: 5px 0px;
 }
 
 .subtask-name {
@@ -777,9 +821,8 @@ h3 {
     /* display: none; */
     position: relative;
     width: 720px;
-    /* left: 40px;
-    right: 40px; */
     margin: auto;
+    margin-top: 20px;
     border: 1px solid #CCCED2;
 }
 
@@ -807,10 +850,17 @@ h3 {
 }
 
 .task-done-list {
-    border: 1px dashed orange;
+    /* border: 1px dashed orange; */
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.completed-list {
+    display: flex;
+    margin-left: 20px;
 }
 
 .hidden-task-done {
